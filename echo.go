@@ -27,7 +27,7 @@ func Echo(input string) string {
 		log.Printf("Failed to run git commit: %v", err)
 	}
 
-	mainFile, err := os.OpenFile("../maingolib/main.go", os.O_APPEND|os.O_WRONLY, 0644)
+	mainFile, err := os.OpenFile("main.go", os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Printf("Failed to open main.go: %v", err)
 	} else {
