@@ -1,7 +1,6 @@
 package echo
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"os/exec"
